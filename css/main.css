@@ -1,0 +1,620 @@
+/* montserrat-regular - cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/montserrat-v25-cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v25-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v25-cyrillic-regular.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-cyrillic-regular.woff") format("woff"), url("../assets/fonts/montserrat-v25-cyrillic-regular.ttf") format("truetype"), url("../assets/fonts/montserrat-v25-cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/montserrat-v25-cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v25-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v25-cyrillic-500.woff2") format("woff2"), url("../assets/fonts/montserrat-v25-cyrillic-500.woff") format("woff"), url("../assets/fonts/montserrat-v25-cyrillic-500.ttf") format("truetype"), url("../assets/fonts/montserrat-v25-cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* inter-regular - cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/inter-v12-cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/inter-v12-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/inter-v12-cyrillic-regular.woff2") format("woff2"), url("../assets/fonts/inter-v12-cyrillic-regular.woff") format("woff"), url("../assets/fonts/inter-v12-cyrillic-regular.ttf") format("truetype"), url("../assets/fonts/inter-v12-cyrillic-regular.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-500 - cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/inter-v12-cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/inter-v12-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/inter-v12-cyrillic-500.woff2") format("woff2"), url("../assets/fonts/inter-v12-cyrillic-500.woff") format("woff"), url("../assets/fonts/inter-v12-cyrillic-500.ttf") format("truetype"), url("../assets/fonts/inter-v12-cyrillic-500.svg#Inter") format("svg"); /* Legacy iOS */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+}
+
+.header {
+  position: relative;
+}
+.header__pic {
+  width: 100%;
+}
+.header__top {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  right: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__networks {
+  display: flex;
+}
+.header__network:first-child {
+  margin-right: 15px;
+}
+.header__title {
+  max-width: 157px;
+  position: absolute;
+  top: 124px;
+  left: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 106.4%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.header__subtitle {
+  max-width: 127px;
+  position: absolute;
+  top: 222px;
+  left: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117.02%;
+  color: #ffffff;
+}
+.header__hint {
+  position: absolute;
+  top: 316px;
+  left: 10px;
+}
+.header__btn {
+  padding: 0 13.5px;
+  border-radius: 80px;
+  background: #8c452b;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27.1096px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-right: 17px;
+  cursor: pointer;
+}
+.header__btn-signup {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 27px;
+  background: #8c452b;
+  border-radius: 29px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.benefits {
+  background: #836257;
+  padding: 74px 25px 119px 25px;
+  transform: translateY(-4px);
+  margin-bottom: -4px;
+}
+.benefits__card {
+  margin-bottom: 28px;
+  text-align: center;
+}
+.benefits__card:last-child {
+  margin-bottom: 0;
+}
+.benefits__img {
+  margin-bottom: 12px;
+  height: 37px;
+}
+.benefits__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.antiage {
+  margin-bottom: 86px;
+}
+.antiage__img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.antiage__container {
+  margin: 0 9px;
+}
+.antiage__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0 9px 15px 9px;
+}
+.antiage__text-container {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.antiage__text {
+  margin: 0 9px 10px 9px;
+}
+.antiage__text_last {
+  margin-bottom: 40px;
+}
+.antiage__step {
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+.antiage__step:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+.antiage__number {
+  padding: 9px 11px;
+  margin-right: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+.antiage__step-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.face {
+  padding: 0 9px;
+}
+.face__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.face__text-container {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.face__text {
+  margin-bottom: 10px;
+}
+.face__text:last-child {
+  margin-bottom: 50px;
+}
+
+.proage {
+  background: #001032;
+  margin-bottom: 86px;
+}
+.proage__img {
+  width: 100%;
+  margin-top: 12.5%;
+  margin-bottom: 31%;
+}
+
+.signup {
+  padding: 0 10px;
+  margin-bottom: 86px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.signup__title {
+  margin-bottom: 29px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000;
+}
+.signup__subtitle {
+  margin-bottom: 22px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.signup__input {
+  padding: 15px 12px;
+  width: 100%;
+  background: rgba(159, 128, 113, 0.2);
+  border-radius: 8px;
+  margin-bottom: 4px;
+  outline: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #111111;
+}
+.signup__input_last {
+  margin-bottom: 12px;
+}
+.signup__btn {
+  margin: 0 auto;
+  display: block;
+  padding: 15px 27px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  background: #8c452b;
+  border-radius: 29px;
+  cursor: pointer;
+}
+.signup__btn-image {
+  padding-left: 11px;
+}
+.signup__checkbox-container {
+  display: flex;
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 28px;
+}
+.signup__checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.signup__checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 23px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.signup__checkbox:checked ~ .signup__checkmark {
+  border-color: #8c452b;
+}
+.signup__checkbox:checked ~ .signup__checkbox-text {
+  color: #8c452b;
+}
+.signup__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.signup__checkbox:checked ~ .signup__checkmark:after {
+  display: block;
+}
+.signup__checkmark:after {
+  left: 6.8px;
+  top: 1.5px;
+  width: 5px;
+  height: 13px;
+  border: solid #8c452b;
+  border-width: 0 2.25px 2.25px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.signup__checkbox-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.footer {
+  background: #8c452b;
+  padding: 29px 44px 58px 44px;
+}
+.footer__container {
+  max-width: 316px;
+  margin: 0 auto;
+}
+.footer__pic {
+  text-align: center;
+  margin-bottom: 26px;
+}
+.footer__contacts {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 20px;
+}
+.footer__contact {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.footer__contact:last-child {
+  margin-bottom: 0;
+}
+.footer__networks {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer__network {
+  display: inline;
+}
+.footer__network:first-child {
+  margin-right: 19px;
+}
+.footer__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: none;
+  }
+  .benefits {
+    padding-top: 198px;
+    padding-bottom: 198px;
+  }
+  .benefits__cards {
+    max-width: 1155px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 44px;
+  }
+  .benefits__card {
+    width: 100%;
+    margin: 0;
+  }
+  .benefits__card_first {
+    max-width: 326px;
+  }
+  .benefits__card_second {
+    max-width: 380px;
+  }
+  .benefits__card_third {
+    max-width: 361px;
+  }
+  .benefits__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .benefits__img {
+    margin-bottom: 40px;
+    height: 59px;
+  }
+  .antiage {
+    margin-bottom: 170px;
+  }
+  .antiage__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .antiage__img {
+    order: 3;
+    object-fit: cover;
+    margin-bottom: 100px;
+  }
+  .antiage__title {
+    order: 1;
+    margin: 170px 0 50px 0;
+    font-size: 64px;
+    line-height: 78px;
+  }
+  .antiage__text-container {
+    order: 2;
+    display: flex;
+    font-size: 22px;
+    line-height: 27px;
+    gap: 42px;
+  }
+  .antiage__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .antiage__step:first-child {
+    border-top: none;
+  }
+  .antiage__step:last-child {
+    border-bottom: none;
+  }
+  .antiage__step-text {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .antiage__number {
+    font-size: 57px;
+    line-height: 69px;
+    padding: 12px 17px;
+  }
+  .face {
+    max-width: 1240px;
+    padding: 0 30px;
+    margin: 0 auto 170px auto;
+  }
+  .face__title {
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 50px;
+  }
+  .face__text-container {
+    display: flex;
+    gap: 25px;
+  }
+  .face__text {
+    max-width: 50%;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .proage {
+    text-align: right;
+    margin-bottom: 170px;
+  }
+  .proage__img {
+    width: 58%;
+    margin: 0;
+  }
+  .signup__title {
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 36px;
+  }
+  .signup__subtitle {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 60px;
+  }
+  .signup__input {
+    font-size: 21px;
+    line-height: 25px;
+    padding: 21px 26px;
+    margin-bottom: 7.5px;
+  }
+  .signup__input_last {
+    margin-bottom: 21.5px;
+  }
+  .signup__checkbox-container {
+    padding-left: 62px;
+    margin-bottom: 59px;
+  }
+  .signup__checkbox-text {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .signup__checkmark {
+    width: 38px;
+    height: 39.5px;
+    border-width: 1.7px;
+  }
+  .signup__checkmark:after {
+    left: 10.8px;
+    top: 0.5px;
+    width: 11px;
+    height: 25px;
+    border-width: 0 3.5px 3.5px 0;
+  }
+  .signup__btn {
+    padding: 25px 136px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .signup__btn-image {
+    width: 38px;
+  }
+  .footer {
+    background: #8c452b;
+    padding-top: 41px;
+    padding-bottom: 71px;
+  }
+  .footer__pic {
+    text-align: center;
+    margin-bottom: 11px;
+  }
+  .footer__contacts {
+    padding-bottom: 24px;
+    border-bottom: 1.4px solid #ffffff;
+  }
+  .footer__contact {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+  .footer__networks {
+    text-align: center;
+    margin-bottom: 45.5px;
+  }
+  .footer__network:first-child {
+    margin-right: 20.5px;
+  }
+  .footer__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,689 @@
+@import "fonts";
+@import "colors";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+}
+
+.header {
+  position: relative;
+  &__pic {
+    width: 100%;
+  }
+
+  &__top {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    right: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__networks {
+    display: flex;
+  }
+
+  &__network:first-child {
+    margin-right: 15px;
+  }
+
+  &__title {
+    max-width: 157px;
+    position: absolute;
+    top: 124px;
+    left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 106.4%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    max-width: 127px;
+    position: absolute;
+    top: 222px;
+    left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117.02%;
+    color: #ffffff;
+  }
+
+  &__hint {
+    position: absolute;
+    top: 316px;
+    left: 10px;
+  }
+
+  &__btn {
+    padding: 0 13.5px;
+    border-radius: 80px;
+    background: $primary-color;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.1096px;
+    line-height: 33px;
+    color: #ffffff;
+    margin-right: 17px;
+    cursor: pointer;
+  }
+
+  &__btn-signup {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 27px;
+    background: $primary-color;
+    border-radius: 29px;
+    white-space: nowrap;
+    cursor: pointer;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+}
+
+.benefits {
+  background: $brown;
+  padding: 74px 25px 119px 25px;
+  transform: translateY(-4px);
+  margin-bottom: -4px;
+
+  &__card {
+    margin-bottom: 28px;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    margin-bottom: 12px;
+    height: 37px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.antiage {
+  margin-bottom: 86px;
+
+  &__img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    margin: 0 9px;
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+    margin: 0 9px 15px 9px;
+  }
+
+  &__text-container {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  &__text {
+    margin: 0 9px 10px 9px;
+
+    &_last {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__step {
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+
+  &__number {
+    padding: 9px 11px;
+    margin-right: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+  }
+
+  &__step-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+
+.face {
+  padding: 0 9px;
+
+  &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  &__text-container {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.proage {
+  background: #001032;
+  margin-bottom: 86px;
+
+  &__img {
+    width: 100%;
+    margin-top: 12.5%;
+    margin-bottom: 31%;
+  }
+}
+
+.signup {
+  padding: 0 10px;
+  margin-bottom: 86px;
+
+  &__title {
+    margin-bottom: 29px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+  }
+
+  &__subtitle {
+    margin-bottom: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  &__input {
+    padding: 15px 12px;
+    width: 100%;
+    background: rgba(159, 128, 113, 0.2);
+    border-radius: 8px;
+    margin-bottom: 4px;
+    outline:none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #111111;
+
+    &_last {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    display: block;
+    padding: 15px 27px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    background: $primary-color;
+    border-radius: 29px;
+    cursor: pointer;
+
+    &-image {
+      padding-left: 11px;
+    }
+  }
+
+  &__checkbox-container {
+    display: flex;
+    position: relative;
+    padding-left: 38px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 28px;
+  }
+
+  /* Hide the browser's default checkbox */
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  &__checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 23px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  }
+
+
+  /* When the checkbox is checked, add a blue background */
+  &__checkbox:checked ~ &__checkmark {
+    border-color: $primary-color;
+  }
+
+  &__checkbox:checked ~ &__checkbox-text {
+    color: $primary-color;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  &__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  &__checkbox:checked ~ &__checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  &__checkmark:after {
+    left: 6.8px;
+    top: 1.5px;
+    width: 5px;
+    height: 13px;
+    border: solid $primary-color;
+    border-width: 0 2.25px 2.25px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &__checkbox-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+}
+
+.footer {
+  background: $primary-color;
+  padding: 29px 44px 58px 44px;
+
+  &__container {
+    max-width: 316px;
+    margin: 0 auto;
+  }
+
+  &__pic {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  &__contacts {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 20px;
+  }
+
+  &__contact {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__networks {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__network {
+    display: inline;
+
+    &:first-child {
+      margin-right: 19px;
+    }
+  }
+
+  &__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: none;
+  }
+  .benefits {
+    padding-top: 198px;
+    padding-bottom: 198px;
+
+    &__cards {
+      max-width: 1155px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      gap: 44px;
+    }
+
+    &__card {
+      width: 100%;
+      margin: 0;
+
+      &_first {
+        max-width: 326px;
+      }
+
+      &_second {
+        max-width: 380px;
+      }
+
+      &_third {
+        max-width: 361px;
+      }
+    }
+
+    &__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    &__img {
+      margin-bottom: 40px;
+      height: 59px;
+    }
+  }
+
+  .antiage {
+    margin-bottom: 170px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    &__img {
+      order: 3;
+      object-fit: cover;
+      margin-bottom: 100px;
+    }
+
+    &__title {
+      order: 1;
+      margin: 170px 0 50px 0;
+      font-size: 64px;
+      line-height: 78px;
+    }
+
+    &__text-container {
+      order: 2;
+      display: flex;
+      font-size: 22px;
+      line-height: 27px;
+      gap: 42px;
+    }
+
+    &__container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    &__step {
+      &:first-child {
+        border-top: none;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__step-text {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    &__number {
+      font-size: 57px;
+      line-height: 69px;
+      padding: 12px 17px;
+    }
+  }
+
+  .face {
+    max-width: 1240px;
+    padding: 0 30px;
+    margin: 0 auto 170px auto;
+
+    &__title {
+      font-size: 64px;
+      line-height: 78px;
+      margin-bottom: 50px;
+    }
+
+    &__text-container {
+      display: flex;
+      gap: 25px;
+    }
+
+    &__text {
+      max-width: 50%;
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+
+  .proage {
+    text-align: right;
+    margin-bottom: 170px;
+
+    &__img {
+      width: 58%;
+      margin: 0;
+    }
+  }
+
+  .signup {
+    &__title {
+      font-size: 64px;
+      line-height: 78px;
+      margin-bottom: 36px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 60px;
+    }
+
+    &__input {
+      font-size: 21px;
+      line-height: 25px;
+      padding: 21px 26px;
+      margin-bottom: 7.5px;
+
+      &_last {
+        margin-bottom: 21.5px;
+      }
+    }
+
+    &__checkbox-container {
+      padding-left: 62px;
+      margin-bottom: 59px;
+    }
+
+    &__checkbox-text {
+      font-size: 21px;
+      line-height: 25px;
+    }
+
+    &__checkmark {
+      width: 38px;
+      height: 39.5px;
+      border-width: 1.7px;
+
+      &:after {
+        left: 10.8px;
+        top: 0.5px;
+        width: 11px;
+        height: 25px;
+        border-width: 0 3.5px 3.5px 0;
+      }
+    }
+
+    &__btn {
+      padding: 25px 136px;
+      font-size: 24px;
+      line-height: 29px;
+
+      &-image {
+        width: 38px;
+      }
+    }
+  }
+
+  .footer {
+    background: $primary-color;
+    padding-top: 41px;
+    padding-bottom: 71px;
+
+    &__pic {
+      text-align: center;
+      margin-bottom: 11px;
+    }
+
+    &__contacts {
+      padding-bottom: 24px;
+      border-bottom: 1.4px solid #ffffff;
+    }
+
+    &__contact {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 6px;
+    }
+
+    &__networks {
+      text-align: center;
+      margin-bottom: 45.5px;
+    }
+
+    &__network {
+      &:first-child {
+        margin-right: 20.5px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+

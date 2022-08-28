@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="assets/images/polina-header.svg" alt="Полина Гнедько" class="header__pic" />
+            <div class="header__top">
+                <a href="/"><img src="assets/images/logo-header.svg" alt="Logo" class="header__logo-pic" /></a>
+                <ul class="header__networks">
+                    <li class="header__network"><a href="#!"><img src="assets/images/instagram-header.svg" alt="Instagram" class="header__network-link" /></a></li>
+                    <li class="header__network"><a href="#!"><img src="assets/images/telegram-header.svg" alt="Telegram" class="header__network-link" /></a></li>
+                </ul>
+            </div>
+            <h1 class="header__title">
+                Полина Гнедько
+            </h1>
+            <h2 class="header__subtitle">
+                Комплексное восстановление
+                с сохранением индивидуальности!
+            </h2>
+            <div class="header__hint">
+                <button type="button" class="header__btn">i</button>
+                <img src="assets/images/arrow-header.svg" alt="Arrow" class="header__arrow">
+            </div>
+            <button class="header__btn-signup">Записаться на консультацию</button>
+        </div>
+    </header>
+    <main>
+        <section class="benefits">
+            <ul class="benefits__cards">
+                <li class="benefits__card benefits__card_first">
+                    <img src="assets/images/heart.svg" alt="Здоровье" class="benefits__img" />
+                    <p class="benefits__text">Частные комплексные консультации по здоровью</p>
+                </li>
+                <li class="benefits__card benefits__card_second">
+                    <img src="assets/images/program.svg" alt="Программа" class="benefits__img" />
+                    <p class="benefits__text">Подбор персонализированной программы восстановления организма</p>
+                </li>
+                <li class="benefits__card benefits__card_third">
+                    <img src="assets/images/plant.svg" alt="Детокс" class="benefits__img" />
+                    <p class="benefits__text">Грамотный детокс<br />
+                        по последним медицинским достижениям</p>
+                </li>
+            </ul>
+        </section>
+        <section class="antiage">
+            <div class="antiage__wrapper">
+                <picture style="order: 3;">
+                    <source srcset="assets/images/antiage-large.svg" media="(min-width: 768px)">
+                    <img src="assets/images/antiage.svg" alt="Anti-age" class="antiage__img">
+                </picture>
+                <h2 class="antiage__title">Что такое anti-age?</h2>
+                <div class="antiage__text-container">
+                    <p class="antiage__text">
+                        Это новая модель профилактической медицины для предотвращения болезней и преждевременного старения, стоящая на пересечении инновационых медицинских и лабораторных технологий Запада
+                    </p>
+                    <p class="antiage__text antiage__text_last">
+                        Консультации «anti-age» предлагают не готовое решение, подходящее многим (к примеру, подтяжка лица, блефаропластика), а индивидуальную программу, основанную на результатах детального обследования, с учётом общего состояния организма
+                    </p>
+                </div>
+            </div>
+            <div class="antiage__container">
+                <ul class="antiage__steps">
+                    <li class="antiage__step">
+                        <div class="antiage__number">1</div>
+                        <div class="antiage__step-text">
+                            Определение системных нарушений вашего организма
+                        </div>
+                    </li>
+                    <li class="antiage__step">
+                        <div class="antiage__number">2</div>
+                        <div class="antiage__step-text">
+                            Составление плана по их коррекции
+                        </div>
+                    </li>
+                    <li class="antiage__step">
+                        <div class="antiage__number">3</div>
+                        <div class="antiage__step-text">
+                            Ежедневное ведение в течение месяца с объяснениями
+                            и рекомендации
+                        </div>
+                    </li>
+                    <li class="antiage__step">
+                        <div class="antiage__number">4</div>
+                        <div class="antiage__step-text">
+                            Индивидуальный подбор косметических и уходовых процедур
+                        </div>
+                    </li>
+                    <li class="antiage__step">
+                        <div class="antiage__number">5</div>
+                        <div class="antiage__step-text">
+                            Подведение итогов, составление рекомендаций по поддержанию достигнутых результатов на долгую перспективу
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="face">
+            <h2 class="face__title">
+                Face couture
+            </h2>
+            <div class="face__text-container">
+                <p class="face__text">
+                    Фейс кутюр — это уникальный метод восстановления лица.
+                    Врач, пластический хирург-косметолог-дерматолог оценивает истинные причины возрастных изменений на лице на уровне костного скелета, истончения детских жировых пакетов и подкожно-жировой клетчатки.
+                    Учитывает асимметрии лица для их гармонизации.
+                </p>
+                <p class="face__text">
+                    В моей авторской методике я подхожу к каждому лицу индивидуально, гармонизируя пропорции согласно принципам золотого сечения Леонардо Да Винчи.
+                </p>
+            </div>
+        </section>
+        <section class="proage">
+            <img src="assets/images/proage.svg" alt="Pro age" class="proage__img">
+        </section>
+        <section class="signup">
+            <h2 class="signup__title">
+                Остались вопросы?
+            </h2>
+            <div class="signup__subtitle">
+                Заполните форму и мы свяжемся с вами для консультации
+            </div>
+            <form class="signup__form" id="form">
+                <input type="text" name="name" class="signup__input" placeholder="Имя" required>
+                <input type="tel" name="phone" class="signup__input signup__input_last" placeholder="Номер телефона" required>
+                <label class="signup__checkbox-container">
+                    <input type="checkbox" name="isAgreedToKeepData" class="signup__checkbox" required>
+                    <span class="signup__checkmark"></span>
+                    <span class="signup__checkbox-text">Согласен на обработку и хранение персональных данных</span>
+                </label>
+                <button type="submit" class="signup__btn" id="btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__pic">
+                <picture>
+                    <source srcset="assets/images/logo-footer-desktop.svg" media="(min-width: 768px)">
+                    <img src="assets/images/logo-footer-mobile.svg" alt="Logo" class="footer__img">
+                </picture>
+            </div>
+            <ul class="footer__networks">
+                <li class="footer__network"><a href="#!"><img src="assets/images/instagram-footer.svg" alt="Instagram" class="footer__network-link" /></a></li>
+                <li class="footer__network"><a href="#!"><img src="assets/images/telegram-footer.svg" alt="Telegram" class="footer__network-link" /></a></li>
+            </ul>
+            <address class="footer__contacts-container">
+                <ul class="footer__contacts">
+                    <li class="footer__contact">
+                        +375 29 168 1818
+                    </li>
+                    <li class="footer__contact">
+                        г. Минск, ул. Смолячкова 4
+                    </li>
+                </ul>
+            </address>
+            <p class="footer__text">
+                Оставайтесь на связи
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const inputObject = Object.fromEntries(formData);
+
+            console.log(inputObject);
+
+            btn.innerText = "Отправлено";
+
+
+            const image = document.createElement('img');
+            image.setAttribute('src', 'assets/images/checkmark.svg');
+            image.setAttribute('alt', 'Отправлено');
+            image.classList.add("signup__btn-image")
+            btn.append(image);
+        })
+    </script>
+</body>
+</html>
