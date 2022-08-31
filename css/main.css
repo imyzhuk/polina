@@ -30,6 +30,14 @@
   src: url("../assets/fonts/inter-v12-cyrillic-500.eot"); /* IE9 Compat Modes */
   src: local(""), url("../assets/fonts/inter-v12-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/inter-v12-cyrillic-500.woff2") format("woff2"), url("../assets/fonts/inter-v12-cyrillic-500.woff") format("woff"), url("../assets/fonts/inter-v12-cyrillic-500.ttf") format("truetype"), url("../assets/fonts/inter-v12-cyrillic-500.svg#Inter") format("svg"); /* Legacy iOS */
 }
+/* jost-300 - cyrillic */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/jost-v14-cyrillic-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/jost-v14-cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/jost-v14-cyrillic-300.woff2") format("woff2"), url("../assets/fonts/jost-v14-cyrillic-300.woff") format("woff"), url("../assets/fonts/jost-v14-cyrillic-300.ttf") format("truetype"), url("../assets/fonts/jost-v14-cyrillic-300.svg#Jost") format("svg"); /* Legacy iOS */
+}
 * {
   padding: 0;
   margin: 0;
@@ -45,30 +53,23 @@
 .header__pic {
   width: 100%;
 }
-.header__top {
+.header__logo {
   position: absolute;
   top: 13px;
   left: 10px;
-  right: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header__networks {
-  display: flex;
-}
-.header__network:first-child {
-  margin-right: 15px;
-}
 .header__title {
   max-width: 157px;
   position: absolute;
-  top: 124px;
+  top: 22%;
   left: 10px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 33px;
+  font-size: 10.3vw;
   line-height: 106.4%;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -76,19 +77,33 @@
 .header__subtitle {
   max-width: 127px;
   position: absolute;
-  top: 222px;
+  top: 38%;
   left: 10px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 3.6vw;
   line-height: 117.02%;
   color: #ffffff;
 }
 .header__hint {
   position: absolute;
-  top: 316px;
+  top: 56%;
   left: 10px;
+}
+.header__tooltip {
+  visibility: hidden;
+  margin-top: 11px;
+  padding: 6.5px;
+  max-width: 261px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
 }
 .header__btn {
   padding: 0 13.5px;
@@ -103,9 +118,15 @@
   margin-right: 17px;
   cursor: pointer;
 }
+.header__btn:hover ~ .header__tooltip {
+  visibility: visible;
+}
+.header__arrow {
+  padding-bottom: 3px;
+}
 .header__btn-signup {
   position: absolute;
-  bottom: 50px;
+  bottom: 14%;
   left: 50%;
   transform: translateX(-50%);
   padding: 15px 27px;
@@ -119,6 +140,23 @@
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+}
+.header__networks {
+  display: flex;
+  position: absolute;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__network {
+  margin-right: 19px;
+  width: 29px;
+}
+.header__network:last-child {
+  margin-right: 0;
+}
+.header__icon path {
+  fill: #8c452b;
 }
 
 .benefits {
@@ -240,11 +278,30 @@
 .proage {
   background: #001032;
   margin-bottom: 86px;
+  position: relative;
 }
 .proage__img {
   width: 100%;
-  margin-top: 12.5%;
-  margin-bottom: 31%;
+}
+.proage__title {
+  display: none;
+}
+.proage__btn {
+  position: absolute;
+  left: 50%;
+  bottom: 13.7%;
+  transform: translateX(-50%);
+  padding: 15px 39px;
+  background: #ffffff;
+  border-radius: 29px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #044769;
 }
 
 .signup {
@@ -258,13 +315,17 @@
   /* Style the checkmark/indicator */
 }
 .signup__title {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 32px;
   color: #000000;
+}
+.signup__img {
+  width: 100%;
+  margin-bottom: 25px;
 }
 .signup__subtitle {
   margin-bottom: 22px;
@@ -374,7 +435,7 @@
 
 .footer {
   background: #8c452b;
-  padding: 29px 44px 58px 44px;
+  padding: 29px 44px 63px 44px;
 }
 .footer__container {
   max-width: 316px;
@@ -382,7 +443,7 @@
 }
 .footer__pic {
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 .footer__contacts {
   padding-bottom: 20px;
@@ -404,14 +465,13 @@
   margin-bottom: 0;
 }
 .footer__networks {
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px 10px 16px;
 }
-.footer__network {
-  display: inline;
-}
-.footer__network:first-child {
-  margin-right: 19px;
+.footer__network-link {
+  width: 29px;
 }
 .footer__text {
   font-family: "Inter";
@@ -425,7 +485,80 @@
 
 @media screen and (min-width: 768px) {
   .header {
+    background: #302624;
+  }
+  .header__pic {
+    max-width: 902px;
+    width: 63%;
+  }
+  .header__logo {
+    top: 35px;
+    left: 9%;
+  }
+  .header__title {
+    top: 28%;
+    left: 9%;
+    font-size: 8.3vw;
+    max-width: 45.7%;
+  }
+  .header__subtitle {
+    max-width: 44.6%;
+    top: 58%;
+    left: 9%;
+    font-size: 2.1vw;
+  }
+  .header__hint {
+    top: 73.1%;
+    left: 65.5%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .header__btn {
+    padding: 0 17.3px;
+    font-size: 34.5px;
+    line-height: 42px;
+    margin-right: 14.5px;
+  }
+  .header__arrow {
     display: none;
+  }
+  .header__tooltip {
+    margin: 0;
+    transform: translateY(calc(-50% + 21px));
+    padding: 6px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .header__btn-signup {
+    padding: 25px 0;
+    bottom: auto;
+    top: 75%;
+    border-radius: 40px;
+    font-size: 1.6vw;
+    line-height: 123%;
+    width: 29.9%;
+    text-align: center;
+  }
+  .header__networks {
+    top: 50px;
+    right: 9%;
+    left: auto;
+    transform: none;
+    flex-direction: column;
+  }
+  .header__network {
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+  .header__icon {
+    height: 41px;
+    width: 41px;
+  }
+  .header__icon path {
+    fill: #ffffff;
+  }
+  .header__icon:hover path {
+    fill: #8c452b;
   }
   .benefits {
     padding-top: 198px;
@@ -536,13 +669,57 @@
     margin-bottom: 170px;
   }
   .proage__img {
-    width: 58%;
+    width: 100%;
     margin: 0;
+  }
+  .proage__btn {
+    top: 50.8%;
+    left: 9.2%;
+    transform: none;
+    bottom: auto;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 25px 68px;
+    border-radius: 45px;
+  }
+  .proage__title {
+    display: block;
+    max-width: 41.1%;
+    text-align: left;
+    position: absolute;
+    top: 33.4%;
+    left: 9.2%;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .signup {
+    position: relative;
+  }
+  .signup__img {
+    position: absolute;
+    max-width: 49.16%;
+    left: 50.8%;
+    height: 100%;
+    top: 0;
+    right: 0;
   }
   .signup__title {
     font-size: 64px;
     line-height: 78px;
     margin-bottom: 36px;
+    max-width: 41.7%;
+    margin-left: 9%;
+    padding-right: 45px;
+  }
+  .signup__body {
+    max-width: 41.7%;
+    margin-left: 9%;
+    padding-right: 45px;
   }
   .signup__subtitle {
     font-size: 22px;
@@ -606,10 +783,12 @@
   }
   .footer__networks {
     text-align: center;
-    margin-bottom: 45.5px;
+    max-width: 199px;
+    margin: 0 auto 11px auto;
   }
-  .footer__network:first-child {
-    margin-right: 20.5px;
+  .footer__network-link {
+    width: 33px;
+    height: 33px;
   }
   .footer__text {
     font-size: 18px;
