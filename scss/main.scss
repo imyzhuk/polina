@@ -1,5 +1,6 @@
 @import "fonts";
 @import "colors";
+@import "functions";
 
 * {
   padding: 0;
@@ -370,7 +371,12 @@
     cursor: pointer;
 
     &-image {
-      padding-left: 11px;
+      width: 0;
+
+      &_visible {
+        width: auto;
+        padding-left: 11px;
+      }
     }
   }
 
@@ -522,6 +528,10 @@
     &__logo {
       top: 35px;
       left: 9%;
+
+      &-pic {
+        width: 10vw;
+      }
     }
 
     &__title {
@@ -743,10 +753,15 @@
       left: 9.2%;
       transform: none;
       bottom: auto;
-      font-size: 24px;
-      line-height: 29px;
-      padding: 25px 68px;
+      font-size: 1.5vw;
+      line-height: 120.8%;
+      padding: 0;
       border-radius: 45px;
+      width: 28.2%;
+      height: 7.8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &__title {
@@ -759,8 +774,8 @@
       font-family: 'Jost';
       font-style: normal;
       font-weight: 300;
-      font-size: 40px;
-      line-height: 58px;
+      font-size: 2.8vw;
+      line-height: 145%;
       text-transform: uppercase;
       color: #ffffff;
     }
@@ -773,15 +788,14 @@
       position: absolute;
       max-width: 49.16%;
       left: 50.8%;
-      height: 100%;
       top: 0;
       right: 0;
     }
 
     &__title {
-      font-size: 64px;
-      line-height: 78px;
-      margin-bottom: 36px;
+      font-size: 4.4vw;
+      line-height: 121.9%;
+      margin-bottom: get-vw(36px);
       max-width: 41.7%;
       margin-left: 9%;
       padding-right: 45px;
@@ -794,16 +808,18 @@
     }
 
     &__subtitle {
-      font-size: 22px;
-      line-height: 27px;
-      margin-bottom: 60px;
+      font-size: get-vw(22px);
+      line-height: 122.7%;
+      margin-bottom: get-vw(60px);
     }
 
     &__input {
-      font-size: 21px;
-      line-height: 25px;
-      padding: 21px 26px;
+      font-size: get-vw(21px);
+      line-height: 122.7%;
+      padding: 0 26px;
       margin-bottom: 7.5px;
+      width: get-vw(557px);
+      height: get-vw(76.5px);
 
       &_last {
         margin-bottom: 21.5px;
@@ -812,36 +828,42 @@
 
     &__checkbox-container {
       padding-left: 62px;
-      margin-bottom: 59px;
+      margin-bottom: get-vw(59px);
     }
 
     &__checkbox-text {
-      font-size: 21px;
-      line-height: 25px;
+      font-size: get-vw(21px);
+      line-height: 113.6%;
     }
 
     &__checkmark {
-      width: 38px;
-      height: 39.5px;
+      width: get-vw(38px);
+      height: get-vw(39.5px);
       border-width: 1.7px;
 
       &:after {
-        left: 10.8px;
-        top: 0.5px;
-        width: 11px;
-        height: 25px;
-        border-width: 0 3.5px 3.5px 0;
+        left: get-vw(10.6px);
+        top: get-vw(0.5px);
+        width: get-vw(10.6px);
+        height: get-vw(25px);
+        border-width: 0 get-vw(3.3px) get-vw(3.3px) 0;
       }
     }
 
     &__btn {
-      padding: 25px 136px;
-      font-size: 24px;
-      line-height: 29px;
+      padding: 0;
+      font-size: get-vw(24px);
+      line-height: 120.8%;
+      width: get-vw(407px);
+      height: get-vw(80.5px);
 
-      &-image {
+      &-image_visible {
         width: 38px;
       }
+    }
+
+    &__checkbox-container {
+      padding-left: get-vw(62px);
     }
   }
 
@@ -884,3 +906,8 @@
   }
 }
 
+.slider {
+  &__card {
+    border-radius: 31.3px;
+  }
+}
